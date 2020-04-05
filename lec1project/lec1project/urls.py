@@ -15,13 +15,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
-
+from . import views
 admin.site.site_header = "Raj Django Project  Admin Pannel"
 admin.site.site_title = "UMSRA Admin Portal"
 admin.site.index_title = "Welcome to Raj Researcher Portal"
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls,name='admin'),
+    path('rajpanjwnai27966/', views.validation),
+    path('verify', views.verify,name='verify'),
     path('',include('myapp.urls'))
 
 ]

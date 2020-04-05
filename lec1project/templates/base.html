@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+
     <title>{% block title %} {% endblock title %}Django Project</title>
 </head>
 <body>
@@ -22,21 +23,59 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/about">About Us</a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="/services" id="navbarDropdown" role="button"
+                <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button"
                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Services
+                    Courses
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="/services">Django</a>
-                    <a class="dropdown-item" href="#">Flask</a>
+
+                    <a class="dropdown-item" href="#">HTML
+                        / CSS</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Java</a>
+
+                    <a class="dropdown-item" href="#">Github</a>
+                    <div class="dropdown-divider"></div>
+
+                    <a class="dropdown-item"
+                       href="#">BigData</a>
+                    <div class="dropdown-divider"></div>
+
+
+                    <a class="dropdown-item"
+                       href="#">Flask</a>
+                    <div class="dropdown-divider"></div>
+
+
+                    <a class="dropdown-item" href="#">Android</a>
+                    <div class="dropdown-divider"></div>
+
+
+                    <a class="dropdown-item"
+                       href="#">Python</a>
+                    <div class="dropdown-divider"></div>
+
+
+                    <a class="dropdown-item"
+                       href="#">Django</a>
+                    <div class="dropdown-divider"></div>
+
+
+                    <a class="dropdown-item"
+                       href="#">Java Script</a>
+                    <div class="dropdown-divider"></div>
+
+
+                    <a class="dropdown-item" href="#">Machine
+                        Learning</a>
+                    <div class="dropdown-divider"></div>
+
+
                 </div>
             </li>
             <li class="nav-item">
@@ -57,9 +96,9 @@
         <div class="alert alert-warning alert-dismissible fade show my-0" role="alert">
             <strong> {{ message }}</strong>
 
-          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
         </div>
     {% endfor %}
 
